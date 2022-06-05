@@ -1,0 +1,10 @@
+// Esse arquivo é usado quando queremos mover os arquivos do sequelize pra onde quiseremos. É usado para que nao de erro, ja que o proprio espera que os arquivos estejam no diretorio raiz, mas iremos mover mesmo para o diretorio ./api
+
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('./api/config', 'config.json'),
+  'models-path': path.resolve('./api/models'),
+  'seeders-path': path.resolve('./api/seeders'),
+  'migrations-path': path.resolve('./api/migrations')
+}
